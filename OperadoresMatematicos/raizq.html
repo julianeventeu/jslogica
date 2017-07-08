@@ -1,15 +1,15 @@
 <script>
-	var numero = 100;
+	var numero = 101;
 	var resultado = 1;
 
-	while ( resultado * resultado != numero ) {
+	while ( resultado * resultado != numero && ( resultado < numero / 2 ) ) {
 		resultado += 1;
 	}
 
 	if( resultado * resultado == numero ) {
-		document.write("A raiz quadrade de "+numero+" é: " + resultado);
+		document.write("A raiz quadrade de " + numero + " é: " + resultado);
 	} else {
-		document.write("O número "+numero+" não possui razi quadrada inteira.");
+		document.write("O número " + numero + " não possui raiz quadrada inteira.");
 	}
 
 </script>

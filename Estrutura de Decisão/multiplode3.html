@@ -1,8 +1,8 @@
 <script>
     var numero = prompt('Digite um número');
+    var resto = (numero % 3);
 
-
-    if ((numero % 3) == 0) {
+    if ( resto == 0) {
         document.write('O número ' +numero+ ' multiplo de 3');
     }else{
         document.write('O número ' +numero+ ' não multiplo de 3');

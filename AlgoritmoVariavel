@@ -1,0 +1,68 @@
+* Tipo de dados primitivos:
+
+Texto ou string
+var nome = "Camila Belo";
+nome
+
+Número inteiro/decimal ou int/float
+var idade = 27;
+idade
+
+var avaliacao = 4.5;
+avaliacao
+
+Booleano ou boolean
+var curtida = 4.5;
+curtida
+
+
+* Tipo de dados complexo:
+
+var data = {
+	dia: ,
+	mes: "junho",
+	ano: 2017
+};
+
+data.dia
+data.mes
+data.ano
+
+
+* Exercício 5:
+
+Imagine que você trabalha no facebook, crie uma variável para armazenar os nome, email, senha e telefone de uma pessoa.
+
+Ex. Camila, camila@email.com, 123456, 11 99999-999
+
+E pra finalizar, agora você mudou de emprego e trabalha numa concessionária de carros, criei uma variável que tenha um objeto para armazenar o modelo, ano, marca e cor de um carro.
+
+Ex. March, 2017, Nissan, Rosa
+
+
+var pessoa = {
+   nome: "Camila",
+   email: "camila@email.com",
+   senha: "Abc1234",
+   telefone: "11981598829"
+};
+
+pessoa.nome
+pessoa.email
+pessoa.senha
+pessoa.telefone
+
+
+var carro = {
+   modelo: "March",
+   ano: 2017,
+   marca: "Nissan",
+   cor: "Vermelho",
+   preco: 40.000
+};
+
+carro.modelo
+carro.ano
+carro.marca
+carro.cor
+carro.preco

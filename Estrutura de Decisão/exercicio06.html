@@ -1,0 +1,37 @@
+<script>
+    /*
+        Faça um algoritmo para ler: a descrição do produto (nome), a quantidade adquirida e o preço unitário.
+        Calcular e escrever o total (total = quantidade adquirida * preço unitário), o desconto e o total 
+        a pagar (total a pagar = total - desconto), sabendo-se que:  
+
+        - Se quantidade menor ou igual 5 o desconto será de 2%  
+        - Se quantidade maior que 5  e quantidade menor ou igual a 10 o desconto será de 3%  
+        - Se quantidade maior que 10 o desconto será de 5%   
+    */
+
+    var cdescProduto = prompt("Digite o nome do produto");
+    var nQtd = prompt("Digite a quantidade adquirida");
+    var nPreco = prompt("Digite o preco do produto");
+    var nDesconto = 0;
+    var nTotal
+    var nTotalLiq
+
+    if (nQtd <= 5){
+        nDesconto = 0.02;
+
+    }else if (nQtd > 5 && nQtd <= 10 ){
+        nDesconto = 0.03;
+
+    }else{
+        nDesconto = 0.05;
+    }
+
+    nTotal = nQtd * nPreco;
+    nTotalLiq = (nTotal - (nTotal*nDesconto));
+    
+    document.write("Produto " + cdescProduto + "<br>");
+    document.write("Preço unitario R$" + parseFloat(nPreco)+ "<br>");
+    document.write("Desconto R$" + parseFloat(nDesconto*nTotal)+ "<br>");
+    document.write("Total a pagar R$" + parseFloat(nTotalLiq)+ "<br>");
+
+</script>

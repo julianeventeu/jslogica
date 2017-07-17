@@ -1,0 +1,17 @@
+<script>
+    /*
+        Escreva um algoritmo para ler 2 valores e se o segundo valor informado for ZERO,
+         deve ser lido um novo valor, ou seja, para o segundo valor não pode ser aceito o 
+         valor zero e imprimir o resultado da divisão do primeiro valor lido pelo segundo valor lido.  
+    */
+
+    var valor1 = prompt("Digite o primeiro valor");
+    var valor2 = prompt("Digite o segundo valor");
+
+    while(valor2==0){
+        alert("O valor ZERO não é aceito, informe outro");
+        valor2 = prompt("Informe outro valor");
+    }
+
+    document.write("O resultado da divisão é " + parseFloat(valor1/valor2));
+</script>
